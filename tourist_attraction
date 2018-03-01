@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <!--Code made by: Daven Chohan-->
+  <head>
+    <title>Los Angeles Tourist Attractions</title>
+    <style>
+      h1{color:Blue;font-family:Brush Script MT, Brush Script Std,cursive;}
+      h2{color:white;}
+      body{background-color:orange;}
+    </style>
+  </head>
+  <body>
+    <h1 style="font-size:400%;">Los Angeles</h1>
+    <hr>
+    <h2>Tourist Attractions</h2>
+    <ul>
+    <li>Disneyland: <a href="https://disneyland.disney.go.com/">Learn More</a></li><img src="https://secure.cdn1.wdpromedia.com/resize/mwImage/1/640/360/75/dam/wdpro-assets/dlr/gallery/destinations/disneyland-park/disneyland-gallery00.jpg?1504908934350" alt="Disneyland Castle" width="300" height="150"img>
+      <br>
+      <li>Griffith Observatory: <a href="http://griffithobservatory.org/">Learn More</a></li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Griffith_observatory_2006.jpg/1200px-Griffith_observatory_2006.jpg" alt="Griffith Observatory" width="300" height="150"img>
+      <br>
+      <li>Hollywood Sign: <a href="https://hollywoodsign.org/">Learn More</a></li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hollywood_Sign_%28Zuschnitt%29.jpg/1280px-Hollywood_Sign_%28Zuschnitt%29.jpg" alt="Hollywood Sign" width="300" height="150"img>
+      <br>
+      <li>Santa Monica Pier: <a href="https://www.santamonica.com/things-to-do/visiting-santa-monica-pier/">Learn More</a></li><img src="https://www.discoverlosangeles.com/sites/default/files/styles/poi_detail/public/poi_images/santa_monica_pier/h_2000crmlasanta-monica-pier-reddahlia-flickr0_7a5ee37c-5056-a36f-232d46032085d543.png?itok=BxJSZ1ne" alt="Santa Monica Pier at Night" width="250" height="150"img>
+      <br>
+      <li>Staples Center: <a href="https://www.staplescenter.com/">Learn More</a></li><img src="https://blog.tickpick.com/wp-content/uploads/2015/04/StaplesCenter.jpg" alt="Staples Center Outside" width="250" height="150"img>
+      <br>
+      <li>Los Angeles Zoo: <a href="http://www.lazoo.org/">Learn More</a></li><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F37776734%2F5695303998%2F1%2Foriginal.jpg?w=1000&rect=0%2C58%2C2400%2C1200&s=3b35653d3a33d9ded8b65265d8b9c3ed" alt="Los Angeles Zoo Outside" width="300" height="150"img> 
+    </ul>  
+    </body>
+    </html>
