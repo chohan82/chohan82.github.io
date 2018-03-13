@@ -6,11 +6,9 @@
       body {
         background-color: #0F0F0F;
       }
-
       a:hover {
-        color: grey;
+        color: black;
       }
-
       h1 {
         font-family: Impact;
         text-align: center;
@@ -18,40 +16,49 @@
         font-size: 50px;
         height: 65px;
       }
-
       hr {
         background-color: white;
         height: 5px;
         border-style: none;
       }
-
       table,
       th,
       td {
+        border-collapse: collapse;
         border: 4px solid black;
         font-size:30px;
+        margin:0 100px;
+        padding: 10px 15px;
+       background-color:grey;
       }
-      
+      a {
+        color:white;
+      }
+      #first {
+        font-size:30px;
+      }
     </style>
     <title>Electronic Portfolio</title>
   </head>
 
   <body>
-
     <h1>
       Daven's Electronic Portfolio
     </h1>
     <hr>
     <table>
       <tr>
+        <td> <a href="#">Home</a>
         <td> <a href="#">Academic History</a></td>
         <td> <a href="#">Accomplishments</a></td>
         <td> <a href="#">Contact Info</a></td>
-        <td> <a href="#">Work and Volunteer Experience</a></td>
+        <td> <a href="h1"a>Work and Volunteer Experience</a></td>
       </tr>
     </table>
     <hr>
-
+    <p id="first">
+    Hello and welcome to my electronic portfolio. Here you can learn about my life and other things about me. Feel free to explore each link below! 
+    </p>
   </body>
 
 </html>
