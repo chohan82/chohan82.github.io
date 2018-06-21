@@ -1,0 +1,245 @@
+<script>
+function start() {
+  var ready = prompt('Are you ready to play? (Yes/No)').toUpperCase();
+  if (ready === 'YES') {
+    alert('Enjoy!');
+    newGame();
+  } else {
+    alert("That's too bad. Restart the game when you are ready to play.");
+  }
+}
+let hook = false;
+let key = false;
+
+function newGame() {
+  alert("You wake up alone in a mysterious room, you dont recognize anything around you.The furniture in the room seems dated and doesn't look modern. You don't remember how you got there. ");
+  var whereToGoOne = prompt('Theres a room across from you and a door that leads outside. Would you like to go outside, or see whats in the other room? (Outside/Room)').toLowerCase();
+  switch (whereToGoOne) {
+    case 'outside':
+      alert("You travel outside, you're surrounded by a forest. There's a stream towards the left.");
+      outsideHouse();
+      break;
+    case 'room':
+      alert('You enter the other room. The room is someones bed room, and seems to be left as a mess. Their is a window thats been smashed at the other end of the room, their are signs of some sort of conflict. ');
+      otherRoom();
+      break;
+    default:
+      alert('Unknown Input.')
+      newGame();
+  }
+
+  function outsideHouse() {
+    var outsideHouse1 = prompt("Would you like to go towards the forest or the stream? (Forest/Stream/Back)").toLowerCase();
+    switch (outsideHouse1) {
+      case 'forest':
+        alert('You begin walking towards the forest.');
+        alert("Once you reach the forest you notice the tracks of a car. A car must've gone through the forest recently.");
+        forest();
+        break;
+      case 'stream':
+        alert("You make your way down to the stream. The river is flowing rapidly, it's to dangerous to swim across. To make your way to the other side you'll have to find another way across.");
+        stream();
+        break;
+      case 'back':
+        alert('You walk back inside the house.')
+        newGame();
+        break;
+      default:
+        alert('Unknown Input.')
+        outsideHouse();
+    }
+  }
+
+  function otherRoom() {
+    var otherRoom1 = prompt('Would you like to leave the room and go outside or look closer? (Leave/look)').toLowerCase();
+    switch (otherRoom1) {
+      case "leave":
+        alert("You travel outside, you're surrounded by a forest. There's a stream towards the left.");
+        outsideHouse();
+        break;
+      case "look":
+        alert("You take another look at the mess and realize that their is fresh blood stained all over the floor. The trail of blood leads out through the broken window.");
+        alert("You see something interesting sticking out from underneath the pillow. You lift the pillow to reveal a grappling hook with the sharp end drenched in blood.")
+        hook1();
+        break;
+      default:
+        alert('Unknown Input.')
+        otherRoom();
+    }
+  }
+
+  function hook1() {
+    var keepHook = prompt('Would you like to take the grappling hook, or leave the possible criminal evidence untouched? (Take/Leave)').toLowerCase();
+    switch (keepHook) {
+      case 'take':
+        alert('You acquired the grappling hook. This might come in handy later.')
+        hook = true;
+        outsideHouse();
+        break;
+      case 'leave':
+        alert('You ignore the grappling hook.');
+        outsideHouse();
+        break;
+      default:
+        alert('Unknown Input.')
+        hook1();
+    }
+  }
+
+  function stream() {
+    var stream1 = prompt('How would you like to get across the 20 feet gap? Or do you want to go back? (Jump/Hook/Back)').toLowerCase();
+    if (hook === false && stream1 === 'hook') {
+      alert("You don't have a hook.")
+      stream();
+    } else if (hook === true && stream1 === 'hook') {
+      alert('You use your new found tool to hook the other side and swing yourself across. You make it without a scratch.')
+      cave();
+    } else if (stream1 === 'jump') {
+      alert("You tried to jump across the massive gap. Your pathetic jump didn't make it and you fell into the brutal rapids which crushed and forced you underneath the water. Multiple sharp rocks impaled and mutilated your body. You passed in a bloody, painful and sad death.")
+      alert('Better luck next time! Thanks for playing. Refresh to try again!');
+    } else if (stream1 === 'back') {
+      alert('You walk back to the house')
+      outsideHouse();
+    } else {
+      alert("You can't do that or mispelt, try again.")
+      stream();
+    }
+  }
+
+  function cave() {
+    alert('You see a spooky cave up infront of you.')
+    var cave1 = prompt('What would you like to do? (Cave/Back)').toLowerCase();
+    switch (cave1) {
+      case 'cave':
+        alert('You start walking through the cave')
+        inCave();
+        break;
+      case 'back':
+        alert('You go back across the stream.')
+        stream();
+        break;
+      default:
+        alert('Unknown Input.')
+        cave();
+    }
+  }
+
+  function inCave() {
+    alert('You notice a locked reinforced door with a keyhole.');
+    var keyHole = prompt('How would you like to open the door? Or would you like to go back? (Look/Key/Back)').toLowerCase();
+    if (key === false && keyHole === 'key') {
+      alert("You don't have a key.")
+      inCave();
+    } else if (key === true && keyHole === 'key') {
+      alert('You use your new found key to unlock the reinforced door.');
+      alert('You walk in.');
+      go();
+    } else if (keyHole === 'look') {
+      alert("You look around for a key or a clue.")
+      alert("The words 'forest' are written on the wall in blood.");
+      inCave();
+    } else if (keyHole === 'back') {
+      alert('You walk back to the entrance of the cave.')
+      cave();
+    } else {
+      alert("You can't do that or mispelt, try again.")
+      inCave();
+    }
+  }
+
+  function go() {
+    alert('You walk further up and this time find a trap door in the floor with a pad that has a keyboard.');
+    alert('It seems like it needs a password.');
+    var pass = prompt("What's the password? Or you can go back.").toLowerCase();
+    switch (pass) {
+      case 'passwordcode':
+        alert('A green checkmark appears and the trap door slides open.')
+        alert('You climb into the dark room.')
+        final();
+        break;
+      case 'back':
+        alert('You walk back to the first door that needed the key.')
+        inCave();
+        break;
+      default:
+        alert('Wrong password.');
+        go();
+    }
+  }
+
+  function final() {
+    alert('The dark room is filled with money! There must be millions of dollars here.')
+    alert('However, when you look closer you see a dead body in the corner. It seems like he was murdered and much of the money looks like it was taken. Someone must have fought him over the money and killed him.')
+    var take = prompt("Do you take the money and leave to become rich, but feel guilty about not reporting the crime forever? Or do you leave, report the crimes and bring justice? (Rich/Justice)").toLowerCase();
+    switch (take) {
+      case 'rich':
+        alert('You take the money, become rich and live out your days living the good life. But forever feel guilty of your decision.')
+        alert('THE END! Refresh to play again!')
+        break;
+      case 'justice':
+        alert('You find your way out of the forest, get to the police and report the crimes. You get a handful of prize money. The criminal gets caught.')
+        alert('THE END! Refresh to play again!')
+        break;
+      default:
+        alert('Unknown Input');
+        take();
+    }
+  }
+
+  function forest() {
+    var where = prompt('Would you like to go east or west? (West/East/Back)').toLowerCase();
+    switch (where) {
+      case 'west':
+        alert('You begin walking west and notice a fallen down tree.')
+        west();
+        break;
+      case 'east':
+        alert('You begin walking east and come across a pickup truck that has crashed into a tree.')
+        east();
+        break;
+      case 'back':
+        alert('You walk back in front of the house.');
+        outsideHouse();
+        break;
+      default:
+        alert('Unknown Input.')
+        forest();
+    }
+  }
+
+  function west() {
+    alert('The huge fallen down tree has snapped in half and is leaning against the floor. As you take a closer look you realize something has been carved into the tree.');
+    alert('As you take a closer look you notice that an odd sequence of numbers have been engraved into the bark of the tree.');
+    alert('It reads: "01110000 01100001 01110011 01110011 01110111 01101111 01110010 01100100 01100011 01101111 01100100 01100101 "');
+    alert('You walk back');
+    forest();
+  }
+
+  function east() {
+    alert('The car is smoking and abondoned. It seems to be unlocked.')
+    var car = prompt('Where would you like to investigate? (Bed/Passenger Seat/Drivers Seat/Back)').toLowerCase();
+    switch (car) {
+      case 'bed':
+        alert('The bed is filled with leaves and branches from the tree.')
+        east();
+        break;
+      case 'drivers seat':
+        alert('The front seat is empty, the seat is ripped.')
+        east();
+        break;
+      case 'passenger seat':
+        alert("You see and aquire a key. It doesn't seem like its for the car.");
+        key = true;
+        east();
+        break;
+      case 'back':
+        forest();
+        break;
+      default:
+        alert('Unknown Input.')
+    }
+  }
+
+}
+start();
+</script>
