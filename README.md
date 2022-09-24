@@ -16,5 +16,5 @@ Report on Recent Sports from 2018: https://davenchohan.github.io/sports_report.h
 
 JMJR Pizza from 2018: https://davenchohan.github.io/jmjrpizza/jmjrpizza.html 
 
-Various Tourist Attractions from 2018: https://davenchohan.github.io/tourist_attraction.html
+Various Tourist Attractions from 2018 Los Angeles: https://davenchohan.github.io/tourist_attraction.html
 
