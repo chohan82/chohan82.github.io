@@ -4,52 +4,254 @@
 
   <head>
     <title>Spotify Tracker</title>
-    <style>
-      body {
-        background-color: #1DB954;
-      }
-
-      h1 {
-        color: white;
-      }
-
-      h2 {
-        color: white;
-      }
-      body {
-        color: white;
-      }
-
-    </style>
   </head>
 
   <body>
-    <h1 style="text-align:center;">Spotify Tracker</h1>
-    <hr>
-    <br>
-    <h2>GitHub Repository</h2>
-    <a href="https://github.com/dal-dos/SpotifyTracker-App">Spotify Tracker GitHub Repository</a>
-    <hr>
-    <h2>Project Proposal</h2>
-    <iframe width="640" height="360" src="https://www.youtube.com/embed/zigB7aDhHVg">
-    </iframe>
-    <hr>
-    <h2>Show and Tell 1</h2>
-    <iframe width="640" height="360" src="https://www.youtube.com/embed/xBSlSaaJBiE">
-    </iframe>
-    <hr>
-    <h2>Show and Tell 2</h2>
-    <iframe width="640" height="360" src="https://www.youtube.com/embed/yAzpF4IPh28">
-    </iframe>
-    <hr>
-    <h2>About</h2>
-    <p>
-      We are making use of Spotify Api to create SpotifyTracker! This app is going to track user statistics and more. 
-      It is able to login securely using Spotify authentication. It allows analyzing and viewing of Spotify user data 
-      and statistics which Spotify does not show easily or often directly to the user, some these are: Listening time, 
-      Recently played, Favorite genre, Favorite artists. Music will be suggested based on local weather, and songs that 
-      are recommended and tailored to the user's interests by Spotify.
-    </p>
+<p align="center"><a href="https://developer.spotify.com/"><img src="https://user-images.githubusercontent.com/32851308/205771027-c520d818-bbfd-4ebe-88c5-9b2c91000e1c.png" width="100px" align="middle" /> </a></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/36864092/205780211-90ad85f9-199f-4803-a64b-9811622fd392.png" width="500px" align="middle" /></p>
+<h3 align="center">Track all of your spotify stats and more!</h3>
+ <hr>
+<p align="center"><img src="https://user-images.githubusercontent.com/32851308/205781496-51cab538-e5b4-46f5-ab23-ca6c0fbb1d20.png" width="25px" align="middle" /> <img src="https://user-images.githubusercontent.com/32851308/205768613-8eb78961-14ec-42ee-a579-e63b0828bcbf.png" width="25px" align="middle" /> <img src="https://user-images.githubusercontent.com/32851308/205768600-ecccca3e-d1e7-478e-a6e0-805f523ce9c0.png" width="25px" align="middle" /></p>
+<h1 id="table-of-contents">Table of Contents</h1>
+ <hr>
+<ul>
+  <li><a href="#github">GitHub</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#releases">Releases</a></li>
+<li><a href="#project-videos">Project Videos</a></li>
+<li><a href="#diagrams">Diagrams</a></li>
+<li><a href="#build">Build</a></li>
+<li><a href="#run">Run</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#contributors">Contributors</a></li>
+</ul>
+<h1 id="github">GitHub Repository</h1>
+<hr>
+<a href="https://github.com/dal-dos/SpotifyTracker-App">Spotify Tracker GitHub Repository</a>
+<hr>
+<h1 id="about">About</h1>
+ <hr>
+<p>We used Spotify Api to create SpotifyTracker! This app tracks user statistics and more. It is able to login securely using spotify authentication. It allows analyzing and viewing of Spotify user data and statistics which Spotify does not show easily or often directly to the user, some these are: Listening time, Recently played, Favorite genre, Favorite artists. Music will be suggested based on local weather, and songs that are recommended and tailored to the user's interests by Spotify.</p>
+<h1 id="releases">Releases</h1>
+ <hr>
+<p>Download <a href="#releases">SpotifyTracker_v1.00.apk</a></p>
+<h1 id="project-videos">Project Videos</h1>
+ <hr>
+<h2>Project Proposal</h2>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/zigB7aDhHVg">
+</iframe>
+<hr>
+<h2>Show and Tell 1</h2>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/xBSlSaaJBiE">
+</iframe>
+<hr>
+<h2>Show and Tell 2</h2>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/yAzpF4IPh28">
+</iframe>
+<hr>
+<h2>Final Presentation</h2>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/yAzpF4IPh28">
+</iframe>
+<h1 id="diagrams">Diagrams</h1>
+ <hr>
+<h2 id="mvvm-diagram">MVVM Diagram</h2>
+<p><img src="https://user-images.githubusercontent.com/32851308/205789444-324c8acb-9d5b-4d45-b098-867d106dbcf3.png" alt="MVVM" /></p>
+<h2 id="threads-diagram">Threads Diagram</h2>
+<p><img src="https://user-images.githubusercontent.com/32851308/205789475-ab5fe21a-fde4-4b53-8f87-2aa74b0fc3b0.png" alt="Thread1" /> <img src="https://user-images.githubusercontent.com/32851308/205789483-cf4ccfb0-0366-43e7-9e6f-37be7b4aad44.png" alt="Thread2" /> <img src="https://user-images.githubusercontent.com/32851308/205789495-b86144e5-6d21-48ff-a5f0-f2b6a842db03.png" alt="Thread3" /></p>
+<h1 id="build">Build</h1>
+ <hr>
+<p>Settings used to build the app:</p>
+<ul>
+<li>Kotlin version: 1.6.10</li>
+<li>App Version: 1.00</li>
+<li>Android Studio Version: Chipmunk</li>
+</ul>
+<h1 id="run">Run</h1>
+ <hr>
+<p><strong>A spotify account is <em>required</em> to use any functionality of the app.</strong> Google Play Services is required to use the playlists feature of the app.</p>
+<h1 id="features">Features</h1>
+ <hr>
+<ul>
+<li><a href="#home">Home</a>
+<ul>
+<li><a href="#recently-played">Recently Played</a></li>
+<li><a href="#suggested-by-spotify">Suggested By Spotify</a></li>
+<li><a href="#favorite-tracks">Favorite Tracks</a></li>
+<li><a href="#favorite-artists">Favorite Artists</a></li>
+<li><a href="#favorite-genres">Favorite Genres</a></li>
+</ul>
+</li>
+<li><a href="#stats">Stats</a>
+<ul>
+<li><a href="#playtime-past-24-hours">Playtime past 24 hours</a></li>
+<li><a href="#playtime-past-week">Playtime past week</a></li>
+<li><a href="#popularity-of-top-artists">Popularity of Top Artists</a></li>
+<li><a href="#playtime-of-favorite-tracks">Playtime of favorite tracks</a></li>
+</ul>
+</li>
+<li><a href="#playlists">Playlists</a>
+<ul>
+<li><a href="#suggested-today">Suggested Today</a></li>
+<li><a href="#suggested-future">Suggested Future</a></li>
+<li><a href="#all-playlists">All Playlists</a></li>
+</ul>
+</li>
+<li><a href="#settings">Settings</a>
+<ul>
+<li><a href="#recently-played-settings">Recently Played Settings</a></li>
+<li><a href="#suggested-by-spotify-settings">Suggested By Spotify Settings</a></li>
+<li><a href="#favorite-tracks-settings">Favorite Tracks Settings</a></li>
+<li><a href="#favorite-artists-settings">Favorite Artists Settings</a></li>
+<li><a href="#favorite-genres-settings">Favorite Genres Settings</a></li>
+<li><a href="#playtime-past-24-hours-settings">Playtime past 24 hours Settings</a></li>
+<li><a href="#playtime-past-week-settings">Playtime past week Settings</a></li>
+<li><a href="#popularity-of-top-artists-settings">Popularity of Top Artists Settings</a></li>
+<li><a href="#playtime-of-favorite-tracks-settings">Playtime of favorite tracks Settings</a></li>
+<li><a href="#suggested-today-settings">Suggested Today Settings</a></li>
+<li><a href="#suggested-future-settings">Suggested Future Settings</a></li>
+<li><a href="#all-playlists-settings">All Playlists Settings</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="home">Home</h1>
+ <hr>
+<p>The home page lists all data that we retrieve from spotify</p>
+<h2 id="recently-played">Recently Played</h2>
+ <hr>
+<p>Displays the songs that the user has recently played. Users are able to collapse/expand the cardview by clicking on the arrow next to the heading which will always retain its form. For configurations check <a href="#recently-played-settings">Recently Played Settings</a></p>
+<h2 id="suggested-by-spotify">Suggested By Spotify</h2>
+ <hr>
+<p>Displays the songs that are suggested by spotify based on the music you have listened to. Users are able to collapse/expand the cardview by clicking on the arrow next to the heading which will always retain its form. For configurations check <a href="#suggested-by-spotify-settings">Suggested By Spotify Settings</a></p>
+<h2 id="favorite-tracks">Favorite Tracks</h2>
+ <hr>
+<p>Displays the songs that the user has listened to the most in descending order. Users are able to collapse/expand the cardview by clicking on the arrow next to the heading which will always retain its form. For configurations check <a href="#favorite-tracks-settings">Favorite Tracks Settings</a></p>
+<h2 id="favorite-artists">Favorite Artists</h2>
+ <hr>
+<p>Displays the artists that the user has listened to the most in descending order. Users are able to collapse/expand the cardview by clicking on the arrow next to the heading which will always retain its form. For configurations check <a href="#favorite-artists-settings">Favorite Artists Settings</a></p>
+<h2 id="favorite-genres">Favorite Genres</h2>
+ <hr>
+<p>Displays the genres that the user has listened to the most in descending order. Users are able to collapse/expand the cardview by clicking on the arrow next to the heading which will always retain its form. For configurations check <a href="#favorite-genres-settings">Favorite Genres Settings</a></p>
+<h1 id="stats">Stats</h1>
+ <hr>
+<h2 id="playtime-past-24-hours">Playtime past 24 hours</h2>
+ <hr>
+<p>Displays the minutes that the user has played in the past 24 hours. Users are able to collapse/expand the cardview by clicking on the arrow next to the heading which will always retain its form. For configurations check <a href="#playtime-past-24-hours-settings">Playtime past 24 hours Settings</a></p>
+<h2 id="playtime-past-week">Playtime past week</h2>
+ <hr>
+<p>Displays the minutes that the user has played in the past 7 days. Users are able to collapse/expand the cardview by clicking on the arrow next to the heading which will always retain its form. For configurations check <a href="#playtime-past-week-settings">Playtime past week Settings</a></p>
+<h2 id="popularity-of-top-artists">Popularity of Top Artists</h2>
+ <hr>
+<p>Displays the users Favorite Artists popularity world wide in a pie chart. Users are able to click on the piechart to find the percent value compared to their other favorite artists. Users are able to collapse/expand the cardview by clicking on the arrow next to the heading which will always retain its form. For configurations check <a href="#popularity-of-top-artists-settings">Popularity of Top Artists Settings</a></p>
+<h2 id="playtime-of-favorite-tracks">Playtime of favorite tracks</h2>
+ <hr>
+<p>Displays the users favorite tracks playtime in a pie chart. Users are able to click on a the piechart to find how many hours they have played their favorite tracks for. Users are able to collapse/expand the cardview by clicking on the arrow next to the heading which will always retain its form. For configurations check <a href="#playtime-of-favorite-tracks-settings">Playtime of favorite tracks Settings</a></p>
+<h1 id="playlists">Playlists</h1>
+ <hr>
+<h2 id="suggested-today">Suggested Today</h2>
+ <hr>
+<p>Displays suggested tracks for the user based on the current weather and history. Users are able to collapse/expand the cardview by clicking on the arrow next to the heading which will always retain its form. For configurations check <a href="#suggested-today-settings">Suggested Today Settings</a></p>
+<h2 id="suggested-future">Suggested Future</h2>
+ <hr>
+<p>Displays suggested tracks for the user based on the future weather and history. Users are able to collapse/expand the cardview by clicking on the arrow next to the heading which will always retain its form. For configurations check <a href="#suggested-future-settings">Suggested Future Settings</a></p>
+<h2 id="all-playlists">All Playlists</h2>
+ <hr>
+<p>Displays all suggested playlists based on the weather and history. Users are able to collapse/expand the cardview by clicking on the arrow next to the heading which will always retain its form. For configurations check <a href="#all-playlists-settings">All Playlists Settings</a></p>
+<h1 id="settings">Settings</h1>
+ <hr>
+<h2 id="recently-played-settings">Recently Played Settings</h2>
+ <hr>
+<ul>
+<li>Show/Hide the entire Recently Played Cardview (Default: Show)</li>
+<li>Number of tracks that are shown in recently played (Default: 5, Min: 1, Max: 50)</li>
+<li>Tracks that you listened to before a chosen date (Default: Current Day)</li>
+<li>Tracks that you listened to after a chosen date (Default: Beginning of time)</li>
+</ul>
+<h2 id="suggested-by-spotify-settings">Suggested By Spotify Settings</h2>
+ <hr>
+<ul>
+<li>Show/Hide the entire Suggested By Spotify Cardview (Default: Show)</li>
+<li>Number of tracks that are shown in suggested by spotify (Default: 5, Min: 1, Max: 50)</li>
+</ul>
+<h2 id="favorite-tracks-settings">Favorite Tracks Settings</h2>
+ <hr>
+<ul>
+<li>Show/Hide the entire Favorite Tracks Cardview (Default: Show)</li>
+<li>Number of tracks that are shown in favorite tracks (Default: 5, Min: 1, Max: 50)</li>
+<li>How far back you want the app to scan your music to determine your favorite tracks (Default: All-time)</li>
+</ul>
+<h2 id="favorite-artists-settings">Favorite Artists Settings</h2>
+ <hr>
+<ul>
+<li>Show/Hide the entire Favorite Artists Cardview (Default: Show)</li>
+<li>Number of tracks that are shown in favorite artists (Default: 5, Min: 1, Max: 50)</li>
+<li>How far back you want the app to scan your music to determine your favorite artists (Default: All-time)</li>
+</ul>
+<h2 id="favorite-genres-settings">Favorite Genres Settings</h2>
+ <hr>
+<ul>
+<li>Show/Hide the entire Favorite Genres Cardview (Default: Show)</li>
+<li>Number of tracks that are shown in favorite genres (Default: 5, Min: 1, Max: 50)</li>
+<li>How far back you want the app to scan your music to determine your favorite genres (Default: All-time)</li>
+</ul>
+<h2 id="playtime-past-24-hours-settings">Playtime past 24 hours Settings</h2>
+ <hr>
+<ul>
+<li>Show/Hide the entire Playtime past 24 hours Cardview (Default: Show)</li>
+</ul>
+<h2 id="playtime-past-week-settings">Playtime past week Settings</h2>
+ <hr>
+<ul>
+<li>Show/Hide the entire Playtime past week Cardview (Default: Show)</li>
+</ul>
+<h2 id="popularity-of-top-artists-settings">Popularity of Top Artists Settings</h2>
+ <hr>
+<ul>
+<li>Show/Hide the entire Popularity of Top Artists Cardview (Default: Show)</li>
+</ul>
+<h2 id="playtime-of-favorite-tracks-settings">Playtime of favorite tracks Settings</h2>
+ <hr>
+<ul>
+<li>Show/Hide the entire Playtime of favorite tracks Cardview (Default: Show)</li>
+</ul>
+<h2 id="suggested-today-settings" style="text-align: left;">Suggested Today Settings</h2>
+ <hr>
+<ul>
+<li>Show/Hide the entire Suggested Today Cardview (Default: Show)</li>
+</ul>
+<h2 id="suggested-future-settings">Suggested Future Settings</h2>
+ <hr>
+<ul>
+<li>Show/Hide the entire Suggested Future Cardview (Default: Show)</li>
+</ul>
+<h2 id="all-playlists-settings" style="text-align: left;">All Playlists Settings</h2>
+ <hr>
+<ul>
+<li>Show/Hide the entire All Playlists Cardview (Default: Show)</li>
+</ul>
+<h1 id="contributors">Contributors</h1>
+ <hr>
+<ul>
+<li><a href="https://github.com/dal-dos">Dalveer Dosanjh</a>
+<ul>
+<li>Home, Stats, Playlists, Settings, Spotify API</li>
+</ul>
+</li>
+<li><a href="https://github.com/davenchohan">Daven Chohan</a>
+<ul>
+<li>Home, Playlists, Spotify API, Weather API</li>
+</ul>
+</li>
+<li><a href="https://github.com/ashokar19">Arjun Shokar</a>
+<ul>
+<li>Home, Stats, Weather API</li>
+</ul>
+</li>
+<li><a href="https://github.com/kupa-fp3">Keene Upathamp</a>
+<ul>
+<li>Playlists, Research</li>
+</ul>
+</li>
+</ul>
   </body>
 
 </html>
