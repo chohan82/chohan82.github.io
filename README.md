@@ -18,5 +18,5 @@ JMJR Pizza from 2018: https://davenchohan.github.io/jmjrpizza/jmjrpizza.html
 
 Various Tourist Attractions from 2018 Los Angeles: https://davenchohan.github.io/tourist_attraction.html
 
-Spotify Tracker from 2022: https://davenchohan.github.io/spotify_tracker.html
+Spotify Tracker from 2022: https://davenchohan.github.io/spotify_tracker/home.html
 
